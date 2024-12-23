@@ -1,25 +1,26 @@
 <!-- HTML: HyperText Markup Language(Lenguaje de Marcas de Hipertexto) y funciona mediante etiquetas -->
 <!-- Html: Es huesos y musculos -->
+<!-- Diferentes etiquetas: El navegador lee dichas etiquetas y es mas eficiente -->
+<!-- Indentacion: Forma visual de ver las aperturas y cierres de etiquetas que contienen mas informacion -->
 
 <!-- !Tipo Documento (DOCTYPE): Le define al navegador el tipo de documento que leera, en este caso HTML -->
 <!DOCTYPE html> 
 
 <!-- !Lenguaje de etiquetado (html): Abre el lenguaje de etiquetado de html -->
-<!-- ?Caracteristicas: lang="Especifica el idioma del contenido de texto utilizado en una página web, en este caso español(es)" -->
+<!-- ?Propiedades: lang="Especifica el idioma del contenido de texto utilizado en una página web, en este caso español(es)" -->
 <html lang="es">  
 
 <!-- !Cabeza (head): Seccion la cual lee el navegador para definir lo que usara la pagina, recursos, propiedades y como esta configurada -->
 <head>
-
     <!-- Todo - Metadatos (meta): Conjunto de datos o declaraciones que describen el contenido, condiciones y otras características de la pagina entera -->
-    <!-- ?Caracteristicas:
+    <!-- ?Propiedades:
     ? charset="Distribución del teclado" 
     ? http-equiv="Compatibilidad con navegadores" 
     ? name="Tipo de metadato" 
     ? content="Contenido de metadato" -->
     <meta charset="UTF-8"> <!-- *Se declara la distribucion del teclado* -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- *Se define que sea compatible con el navegador Edge* -->
-    <meta http-equiv="refresh" content="5; https://www.coldplay.com/"> <!-- *Se define el tiempo en segundos para refrescar la página y se especifica una URL a la que redirigirá tras refrescarse* -->
+    <meta http-equiv="refresh" content="5; "https://www.coldplay.com/""> <!-- *Se define el tiempo en segundos para refrescar la página y se especifica una URL a la que redirigirá tras refrescarse (quitar "")* -->
     <meta http-equiv="cookie" content="user=ChrisAlegria;"> <!-- *Se carga y almacena en el navegador una cookie con un usuario (Mejor uso en JS)* -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- *Se establece la escala en la que se mostrara la pagina* -->
     <meta name="author" content="Chris Alegria"> <!-- *Se define al autor* -->
@@ -27,7 +28,7 @@
     <meta name="keywords" content="curso, desarrollo, aprendisaje, prueba"></meta> <!-- *Se establecen las palabras clave para el buscador* -->
 
     <!-- Todo - Enlaces (link): Vincula recursos externos que la página necesita, como hojas de estilos, fuentes o íconos -->
-    <!-- ?Caracteristicas: 
+    <!-- ?Propiedades: 
     ? rel="Especifica el tipo de recurso a vincular y la manera en que la pagina lo mostrara o usara" - 
     ? href="Especifica la ruta o ubicación donde se encuentra el archivo" -->
     <link rel="stylesheet" href="/css/style.css"> <!-- *Especifica que usara una hoja de estilos y la ubicacion de la misma* -->
@@ -35,24 +36,73 @@
 
     <!-- Todo - Titulo (title): Etiqueta que asigna un titulo a la pestaña -->
     <title>Curso HTML</title> <!--  -->
-
-<!-- !head: Cierre de la cabeza de la pagina -->
 </head> 
 
 <!-- !Cuerpo (body): Contiene todo el contenido del documento y lo que ve el usuarios, como encabezados, párrafos, imágenes, tablas, listas, etc -->
 <body>
+    <!-- Todo - Cabecera (header): Sección superior de la página donde se puede integrar el menú de navegación, logotipo, título, etc.-->
+    <header>
+
+        <!-- Todo - Navegación (nav): Etiqueta que define un bloque de navegación, comúnmente usado para contener enlaces de navegación o menús entre diferentes secciones de la pagina -->
+        <nav>
+
+        </nav>
+    </header>
+
+    <!-- Todo - Sección (section): Etiqueta que define una sección de contenido dentro del documento, útil para agrupar contenido relacionado -->
+    <section>
+
+        <!-- Todo - Artículo (article): Etiqueta que representa un contenido independiente, como un artículo o una entrada de blog -->
+        <article>
+
+        </article>
+
+        <article>
+
+        </article>
+    </section>
+
+    <!-- Todo - Pie de Página (footer): Etiqueta que define la sección de pie de página de la página web, comúnmente utilizada para contener información adicional como derechos de autor, enlaces de contacto o términos de uso -->
+    <footer>
+
+    </footer>
 
     <!-- Todo - Etiqueta titulo (h1): Etiqueta que le asigna estilo de titulo a un texto -->
     <!-- Dato: Existen etiquetas de titulo desde H1 hasta H6, donde H1 es el titulo mas importante y H6 el menos importante-->
     <h1>Hola Mundo</h1>
 
+    <!-- Todo - Parrafo (p): Etiqueta para ingresar un parrafo de texto -->
+    <p>
+        Amamos  <!-- *Texto con estilo por defecto* -->
+        <strong>Codlplay</strong>  <!-- *Texto en negritas* -->
+        <em>pero</em> <!-- *Texto en cursiva* -->
+        <i>tambien amamos</i> <!-- *Texto con enfasis (darle importancia)* -->
+
+    </p>
+
     <!-- Todo - Scripts (script): Etiqueta para insertar o vincular código JavaScript en la página web -->
     <!-- ?Caracteristicas: 
     ? src="Especifica la ruta o ubicación donde se encuentra el archivo JS si esta externo" -->
     <script src="/JavaScript/index.js"></script>
-
-<!-- !body: Cierre del cuerpo de pagina -->
 </body> 
-
-<!-- !html: Cierre del lenguaje de etiquetado -->
 </html>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- !Conceptos Basicos Aplicados -->
+<!-- Todo - Anidamiento: Colocar elementos dentro de otros elementos -->
+<section>
+    <article>
+        <ul>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </article>
+</section>
+
+<!-- Todo - Elementos en bloque: Elementos o etiquetas que ocupan o usan todo un bloque o seccion de la pagina -->
+<p style="background-color: yellow;">Hola</p>
+
+<!-- Todo - Elementos en linea: Elementos o etiquetas que ocupan o usan solamente una linea o unicamente lo que contiene dentro dicho elemento -->
+<i style="background-color: aqua;">Hola</i>
