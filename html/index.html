@@ -1,3 +1,6 @@
+<!-- HTML: HyperText Markup Language(Lenguaje de Marcas de Hipertexto) y funciona mediante etiquetas -->
+<!-- Html: Es huesos y musculos -->
+
 <!-- !Tipo Documento (DOCTYPE): Le define al navegador el tipo de documento que leera, en este caso HTML! -->
 <!DOCTYPE html> 
 
@@ -5,25 +8,31 @@
 <!-- ?Caracteristicas: lang="Especifica el idioma del contenido de texto utilizado en una página web, en este caso español(es)" -->
 <html lang="es">  
 
-<!-- !Cabeza (head): Seccion la cual lee el navegador para definir lo que usara la pagina, recursos y propiedades! -->
+<!-- !Cabeza (head): Seccion la cual lee el navegador para definir lo que usara la pagina, recursos, propiedades y como esta configurada! -->
 <head>
 
     <!-- Todo - Metadatos (meta): Conjunto de datos o declaraciones que describen el contenido, condiciones y otras características de la pagina entera! -->
-    <!-- ?Caracteristicas: name="Nombre metadato" - content="Contenido de metadato" -->
-    <meta charset="UTF-8"> <!-- *Se declara el tipo de entrada de teclado* -->
+    <!-- ?Caracteristicas: name="Tipo de metadato" - content="Contenido de metadato" - charset="Distribución del teclado" - http-equiv="Compatibilidad con navegadores" -->
+    <meta charset="UTF-8"> <!-- *Se declara la distribucion del teclado* -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- *Se define que sea compatible con el navegador Edge* -->
+    <meta http-equiv="refresh" content="5; https://www.coldplay.com/"> <!-- *Se define el tiempo en segundos para refrescar la página y se especifica una URL a la que redirigirá tras refrescarse* -->
+    <meta http-equiv="cookie" content="user=ChrisAlegria;"> <!-- *Se carga y almacena en el navegador una cookie con un usuario (Mejor uso en JS)* -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- *Se establece la escala en la que se mostrara la pagina* -->
     <meta name="author" content="Chris Alegria"> <!-- *Se define al autor* -->
-    <meta name="description" content="Pagina de curso"></meta> <!-- *Se establece la descripcion de la pagina* -->
+    <meta name="description" content="Pagina de curso HTML"></meta> <!-- *Se establece la descripcion de la pagina* -->
     <meta name="keywords" content="curso, desarrollo, aprendisaje, prueba"></meta> <!-- *Se establecen las palabras clave para el buscador* -->
     
-    <!-- Todo - Titulo (title): Etiqueta que asigna un titulo a la pagina web -->
-    <title>Curso</title> <!--  -->
+    <!-- Todo - Titulo (title): Etiqueta que asigna un titulo a la pestaña -->
+    <title>Curso HTML</title> <!--  -->
 
 <!-- !head: Cierre de la cabeza de la pagina! -->
 </head> 
 
-<!-- !Cuerpo (body): Contiene todo el contenido del documento, como encabezados, párrafos, imágenes, hipervínculos, tablas, listas, etc! -->
+<!-- !Cuerpo (body): Contiene todo el contenido del documento y lo que ve el usuarios, como encabezados, párrafos, imágenes, tablas, listas, etc! -->
 <body>
+
+    <!-- TODO - Etiqueta titulo (h1): Etiqueta que le asigna estilo de titulo a un texto -->
+    <!-- Dato: Existen etiquetas de titulo desde H1 hasta H6, donde H1 es el titulo mas importante y H6 el menos importante-->
     <h1>Hola Mundo</h1>
 
 <!-- !body: Cierre del cuerpo de pagina! -->
