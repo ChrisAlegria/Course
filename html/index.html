@@ -3,6 +3,10 @@
 <!-- Diferentes etiquetas: El navegador lee dichas etiquetas y es mas eficiente -->
 <!-- Indentacion: Forma visual de ver las aperturas y cierres de etiquetas que contienen mas informacion -->
 
+<!-- Alt + Shift + F: Auto indentacion -->
+<!-- Click En Linea + Alt + Shif + Click Izquiero En Otra Linea: Escritura Simultanea En Varios Renglones -->
+<!-- Mantener Precionado Alt + Click Izquiero En Diversas Partes: : Escritura Simultanea En Lugares Especificos -->
+
 <!-- !Tipo Documento (DOCTYPE): Le define al navegador el tipo de documento que leera, en este caso HTML -->
 <!DOCTYPE html> 
 
@@ -72,7 +76,7 @@
     </footer>
 
     <!-- Todo - Scripts (script): Etiqueta para insertar o vincular código JavaScript en la página web -->
-    <!-- ?Caracteristicas: 
+    <!-- ?Propiedades: 
     ? src="Especifica la ruta o ubicación donde se encuentra el archivo JS si esta externo" -->
     <script src="/JavaScript/index.js"></script>
 </body> 
@@ -80,18 +84,31 @@
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 <!-- ~Etiquetas Texto -->
-<!-- Todo - Etiqueta titulo (h1): Etiqueta que le asigna estilo de titulo a un texto -->
-<!-- Dato: Existen etiquetas de titulo desde H1 hasta H6, donde H1 es el titulo mas importante y H6 el menos importante-->
-<h1>Hola Mundo</h1>
-
 <!-- Todo - Parrafo (p): Etiqueta para ingresar un parrafo de texto -->
+<!-- ?Propiedades (Opcionales):
+? class="" -->
 <p>
+    <h1>Hola Mundo</h1> <!-- *Etiqueta de titulo (Existe desde H1 hasta H6, donde H1 es el titulo mas importante y H6 el menos importante) -->
+    <hr> <!-- *Salto de linea con linea divisora* -->
     Amamos  <!-- *Texto por defecto* -->
-    <b>Coldplay</b>  <!-- *Texto en negritas* -->
-    <i>pero</i> <!-- *Texto en cursiva* -->
+    <b>Coldplay.</b>  <!-- *Texto en negritas* -->
+    <br> <!-- *Salto de linea* -->
+    <i>Pero</i> <!-- *Texto en cursiva* --> 
     <strong>tambien</strong> <!-- *Texto importante (para buscador y pagina)* -->
-    <em>amamos</em> <!-- *Texto con enfasis (para buscador y pagina)* -->
-
+    <em>amamos a</em> <!-- *Texto enfatico (para buscador y pagina)* -->
+    <pre> <!-- *Etiqueta que realiza saltos de linea tomando los saltos de linea en el editor de codigo* -->
+        Rammstein
+        Queen
+        Alfredo Olivas
+        Los Plebes Del Rancho
+    </pre>
+    
+    <!-- Todo - Citas (blockquote, q): Etiquetas para colocar citas y referenciar las mismas -->
+    <!-- ?Propiedades (Opcionales): 
+    ? cite="Direccion url de donde se extrajo la cita" 
+    ? lenguaje="Especifica el idioma de la cita en caso de encontrase en uno difente al usado en la pagina web" -->
+    <blockquote>"You are the one that I wanted to find." Coldplay</blockquote> <!-- *Etiqueta donde se colocan comillas de manera manual* -->
+    <q >You know you make my world light up.</q> Coldplay  <!-- *Etiqueta donde se colocan comillas de manera automatica* -->
 </p>
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
