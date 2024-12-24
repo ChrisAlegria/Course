@@ -2,6 +2,8 @@
 <!-- Html: Es huesos y musculos -->
 <!-- Diferentes etiquetas: El navegador lee dichas etiquetas y es mas eficiente -->
 <!-- Indentacion: Forma visual de ver las aperturas y cierres de etiquetas que contienen mas informacion -->
+<!-- Bloque: Representa una sección completa que ocupa todo el ancho disponible, como párrafos, divs o listas. -->
+<!-- Línea: Representa elementos en línea que solo ocupan el espacio necesario, como enlaces, spans o texto dentro de un párrafo. -->
 
 <!-- Alt + Shift + F: Auto indentacion -->
 <!-- Click En Linea + Alt + Shif + Click Izquiero En Otra Linea: Escritura Simultanea En Varios Renglones -->
@@ -86,29 +88,33 @@
 <!-- ~Etiquetas Texto -->
 <!-- Todo - Parrafo (p): Etiqueta para ingresar un parrafo de texto -->
 <!-- ?Propiedades (Opcionales):
-? class="" -->
+? class=""
+? style="Ingresa estilos directamente a la etiqueta o componente sin la necesidad de una hoja de estilos CSS" -->
 <p>
-    <h1>Hola Mundo</h1> <!-- *Etiqueta de titulo (Existe desde H1 hasta H6, donde H1 es el titulo mas importante y H6 el menos importante) -->
-    <hr> <!-- *Salto de linea con linea divisora* -->
+    <h1>Hola Mundo</h1> <!-- *Encabezado (H$):Etiqueta de titulo (Existe desde H1 hasta H6, donde H1 es el titulo mas importante y H6 el menos importante) -->
+    <hr> <!-- *Separador (hr): Salto de linea con linea divisora* -->
     Amamos  <!-- *Texto por defecto* -->
-    <b>Coldplay.</b>  <!-- *Texto en negritas* -->
-    <br> <!-- *Salto de linea* -->
-    <i>Pero</i> <!-- *Texto en cursiva* --> 
-    <strong>tambien</strong> <!-- *Texto importante (para buscador y pagina)* -->
-    <em>amamos a</em> <!-- *Texto enfatico (para buscador y pagina)* -->
-    <pre> <!-- *Etiqueta que realiza saltos de linea tomando los saltos de linea en el editor de codigo* -->
+    <b>Coldplay.</b>  <!-- *Negritas (b):Texto en negritas (sin semántica)* -->
+    <br> <!-- *Salto de linea (br): Salto de texto de un renglon* -->
+    <i>Pero</i> <!-- *Cursiva (i): Texto en cursiva (sin semántica)* --> 
+    <strong>tambien</strong> <!-- *Importante (strong): Texto importante (con semantica para buscador y pagina)* -->
+    <em>amamos a</em> <!-- *Enfatico (em): Texto enfatico (con semantica para buscador y pagina)* -->
+    <pre> <!-- *Preformateado (pre): Etiqueta que realiza saltos de linea tomando los saltos de linea en el editor de codigo* -->
         Rammstein
         Queen
         Alfredo Olivas
         Los Plebes Del Rancho
     </pre>
+    Hipotenusa <sup>2</sup> = Cateto opuesto <sup>2</sup> + Cateto adyacente <sup>2</sup> <!-- *Superinidice (sup): Etiqueta que coloca el contenido como un texto elevado* -->
     
     <!-- Todo - Citas (blockquote, q): Etiquetas para colocar citas y referenciar las mismas -->
     <!-- ?Propiedades (Opcionales): 
     ? cite="Direccion url de donde se extrajo la cita" 
-    ? lenguaje="Especifica el idioma de la cita en caso de encontrase en uno difente al usado en la pagina web" -->
-    <blockquote>"You are the one that I wanted to find." Coldplay</blockquote> <!-- *Etiqueta donde se colocan comillas de manera manual* -->
-    <q >You know you make my world light up.</q> Coldplay  <!-- *Etiqueta donde se colocan comillas de manera automatica* -->
+    ? lang="Especifica el idioma de la cita en caso de encontrase en uno difente al usado en la pagina web" -->
+    <blockquote>"You are the one that I wanted to find." Coldplay</blockquote> <!-- *Cita en bloque (blockquote): Etiqueta donde se colocan comillas de manera manual, abarca todo un bloque* -->
+    <q>You know you make my world light up.</q> Coldplay  <!-- *Cita en linea (q): Etiqueta donde se colocan comillas de manera automatica, abarca solo el texto en el que se declare* -->
+    <br> <!-- *Salto de linea* -->
+    <q cite="https://japonesenlanube.com" lang="JA-ja">Suki koso mono no joozo nare.</q>
 </p>
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
