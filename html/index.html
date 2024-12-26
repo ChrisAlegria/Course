@@ -10,7 +10,8 @@
 <!DOCTYPE html> 
 
 <!-- !Lenguaje de etiquetado (html): Abre el lenguaje de etiquetado de html -->
-<!-- ?Propiedades: lang="Especifica el idioma del contenido de texto utilizado en una página web, en este caso español(es)" -->
+<!-- ?Propiedades: 
+? lang="Especifica el idioma del contenido de texto utilizado en una página web, en este caso español(es)" -->
 <html lang="es">  
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -76,17 +77,16 @@
 
     <!-- Todo - Scripts (script): Etiqueta para insertar o vincular código JavaScript en la página web -->
     <!-- ?Propiedades: 
-    ? src="Especifica la ruta o ubicación donde se encuentra el archivo JS si esta externo" -->
+    ? source: src="Especifica la ruta o ubicación donde se encuentra el archivo JS si esta externo" -->
     <script src="/JavaScript/index.js"></script>
 </body> 
-</html>
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 <!-- ~Etiquetas Texto -->
-<!-- Todo - Parrafo (p): Etiqueta para ingresar un parrafo de texto -->
 <!-- ?Propiedades (Opcionales):
 ? class=""
 ? style="Ingresa estilos directamente a la etiqueta o componente sin la necesidad de una hoja de estilos CSS" -->
+<!-- Todo - Parrafo (p): Etiqueta para ingresar un parrafo de texto -->
 <p>
     <h1>Hola Mundo</h1> <!-- *Encabezado (H$):Etiqueta de titulo (Existe desde H1 hasta H6, donde H1 es el titulo mas importante y H6 el menos importante) -->
     <hr> <!-- *Separador (hr): Salto de linea con linea divisora* -->
@@ -96,25 +96,37 @@
     <i>Pero</i> <!-- *Cursiva (i): Texto en cursiva (sin semántica)* --> 
     <strong>tambien</strong> <!-- *Importante (strong): Texto importante (con semantica para buscador y pagina)* -->
     <em>amamos a</em> <!-- *Enfatico (em): Texto enfatico (con semantica para buscador y pagina)* -->
-    <pre> <!-- *Preformateado (pre): Etiqueta que realiza saltos de linea tomando los saltos de linea en el editor de codigo* -->
+    <pre> <!-- *Preformateado (pre): Etiqueta que realiza saltos de linea tomando los saltos de linea y el margen en el editor de codigo* -->
         Rammstein
         Queen
         Alfredo Olivas
         Los Plebes Del Rancho
     </pre>
-    Teorema pitagoras: Hipotenusa <sup>2</sup> = Cateto opuesto <sup>2</sup> + Cateto adyacente <sup>2</sup> <!-- *Superinidice (sup): Etiqueta que coloca el contenido como un texto elevado* -->
-    <br> <!-- *Salto de linea* -->
-    Composicion quimica del agua: H<sub>2</sub>O <!-- *Subinidice (sub): Etiqueta que coloca el contenido como un texto bajo* -->
+    Teorema pitagoras: Hipotenusa <sup>2</sup> = Cateto opuesto <sup>2</sup> + Cateto adyacente <sup>2</sup> <!-- *Superinidice (sup): Etiqueta que coloca el contenido como un texto elevado* --><br> 
+    Composicion quimica del agua: H<sub>2</sub>O <!-- *Subinidice (sub): Etiqueta que coloca el contenido como un texto bajo* --><br> 
+
+    <!-- Todo - Abrevituras/Acronimos (abbr, acronym): Etiquetas para acortar palabras y mantener su significado (actualmente acronym esta descontinuado usando actualmente solo abbr) -->
+    <!-- ?Propiedades:
+    ? title="Especifica el significado completo de la abreviatura o acrónimo, que se mostrará al pasar el cursor sobre el texto" -->
+    Kilometros de la tierra a la luna: 384.400 <abbr title="Kilómetros">Kms</abbr> <!-- *Abrevitura (abbr): Etiqueta para declarar una abreviatura, la cual al pasar el mouse encima se mostrara el significado de la misma* --><br>
+    Es muy interesante lo que hace la <acronym title="National Aeronautics and Space Administration">NASA</acronym> <!-- *Acronimos (acronym): Etiqueta para declarar acronimos (palabras formadas por las iniciales), la cual al pasar el mouse encima se mostrara el significado de la misma* --><br>
+
+    <!-- Todo - Enlaces (a): Etiqueta para convertir texto o elementos en enlaces clickeables que dirigen a otras páginas o recursos. -->
+    <!-- ?Propiedades:
+    ? href="Especifica la ruta a la cual nos direccionara el texto al clickearlo" 
+    ? target="Propiedad que especifica el "objetivo"/funcion del direccionamiento al clickear el texto" -->
+    <a href="https://www.rammstein.de/es/news/">Rammsten Shop</a> <!-- *Texto con enlace el cual direcciona en la misma pestaña* --><br>
+    <a href="https://queentiendaonline.com" target="_blank">Queen Shop</a><!-- *Texto con enlace el cual direcciona en una nueva pestaña* -->
 
     <!-- Todo - Citas (blockquote, q): Etiquetas para colocar citas y referenciar las mismas -->
     <!-- ?Propiedades (Opcionales): 
     ? cite="Direccion url de donde se extrajo la cita" 
     ? lang="Especifica el idioma de la cita en caso de encontrase en uno difente al usado en la pagina web" -->
     <blockquote>"You are the one that I wanted to find." Coldplay</blockquote> <!-- *Cita en bloque (blockquote): Etiqueta donde se colocan comillas de manera manual, abarca todo un bloque* -->
-    <q>You know you make my world light up.</q> Coldplay  <!-- *Cita en linea (q): Etiqueta donde se colocan comillas de manera automatica, abarca solo el texto en el que se declare* -->
-    <br> <!-- *Salto de linea* -->
-    <q cite="https://japonesenlanube.com" lang="JA-ja">Suki koso mono no joozo nare.</q>
+    <q>You know you make my world light up.</q> Coldplay  <!-- *Cita en linea (q): Etiqueta donde se colocan comillas de manera automatica, abarca solo el texto en el que se declare* --><br>
+    <q cite="https://japonesenlanube.com" lang="JA-ja">Suki koso mono no joozo nare.</q> <!-- *Cita en linea (q) con referencia de donde se extrajo la cita y el idioma del texto extraido (japones)* -->
 </p>
+<hr>
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 <!-- ~Conceptos Basicos Aplicados -->
@@ -124,7 +136,9 @@
     <article>
         <ul>
             <li>
-                <p></p>
+                <p>
+                    Hola Mundo
+                </p>
             </li>
         </ul>
     </article>
@@ -135,3 +149,43 @@
 
 <!-- Todo - Elementos en linea: Elementos o etiquetas que ocupan o usan solamente una linea o unicamente lo que contiene dentro dicho elemento -->
 <i style="background-color: aqua;">Hola</i>
+</html>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ~Glosario -->
+<!-- *
+    *http-equiv: HTTP equivalent
+    *HTML: HyperText Markup Language
+    *DOCTYPE: Type of document
+    *lang: language
+    *meta: metadata
+    *charset: character set
+    *nav: navigation
+    *p: paragraph
+    *h1-h6: heading
+    *hr: horizontal rule
+    *target: Objetive
+    *b: bold
+    *i: italic
+    *em: emphasis
+    *src: source
+    *href: hypertext reference
+    *pre: preformatted
+    *sup: superscript
+    *sub: subscript
+    *abbr: abbreviation
+    *a: anchor
+    *q: quote
+    *ul: unordered list
+    *li: list item
+    *ol: ordered list
+    *div: division
+    *alt: alternative text
+    *img: image
+    *thead: table head
+    *tbody: table body
+    *tfoot: table foot
+    *tr: table row
+    *td: table data
+    *th: table header 
+* -->
