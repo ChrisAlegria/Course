@@ -24,10 +24,10 @@
 <head>
     <!-- Todo - Metadatos (meta): Conjunto de datos o declaraciones que describen el contenido, condiciones y otras características de la pagina entera. -->
     <!-- ?Propiedades:
-    ? charset="Distribución del teclado" 
-    ? http-equiv="Compatibilidad con navegadores" 
-    ? name="Tipo de metadato" 
-    ? content="Contenido de metadato" -->
+    ? charset="Distribución del teclado." 
+    ? http-equiv="Compatibilidad con navegadores." 
+    ? name="Tipo de metadato." 
+    ? content="Contenido de metadato." -->
     <meta charset="UTF-8"> <!-- *Se declara la distribucion del teclado.* -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- *Se define que sea compatible con el navegador Edge.* -->
     <meta http-equiv="refresh" content="5; "https://www.coldplay.com/""> <!-- *Se define el tiempo en segundos para refrescar la página y se especifica una URL a la que redirigirá tras refrescarse (quitar "").* -->
@@ -39,10 +39,10 @@
 
     <!-- Todo - Enlaces (link): Vincula recursos externos que la página necesita, como hojas de estilos, fuentes o íconos. -->
     <!-- ?Propiedades: 
-    ? rel="Especifica el tipo de recurso a vincular y la manera en que la pagina lo mostrara o usara" 
-    ? href="Especifica la ruta o ubicación donde se encuentra el archivo" -->
+    ? rel="Especifica el tipo de recurso a vincular y la manera en que la pagina lo mostrara o usara." 
+    ? href="Especifica la ruta o ubicación donde se encuentra el archivo." -->
     <link rel="stylesheet" href="/css/style.css"> <!-- *Especifica que usara una hoja de estilos y la ubicacion de la misma.* -->
-    <link rel="shortcut icon" href="/html/img/favicon.ico" type="image/x-icon"> <!-- *Establece un icono en la pestaña de la pagina y se especifica la ubicacion del icono.* -->
+    <link rel="shortcut icon" href="/html/assets/img/favicon.ico" type="image/x-icon"> <!-- *Establece un icono en la pestaña de la pagina y se especifica la ubicacion del icono.* -->
 
     <!-- Todo - Titulo (title): Etiqueta que asigna un titulo a la pestaña. -->
     <title>Curso HTML</title> <!-- *Se ingresa el titulo a mostrar en la pestaña de la pagina.* -->
@@ -79,7 +79,7 @@
 
     <!-- Todo - Scripts (script): Etiqueta para insertar o vincular código JavaScript en la página web. -->
     <!-- ?Propiedades: 
-    ? src="Especifica la ruta o ubicación donde se encuentra el archivo JS" -->
+    ? src="Especifica la ruta o ubicación donde se encuentra el archivo JS." -->
     <script src="/JavaScript/index.js"></script>
 </body> 
 
@@ -106,15 +106,15 @@
 
     <!-- Todo - Abrevituras/Acronimos (abbr, acronym): Etiquetas para acortar palabras y mantener su significado (actualmente acronym esta descontinuado usando actualmente solo abbr). -->
     <!-- ?Propiedades:
-    ? title="Especifica el significado completo de la abreviatura o acrónimo, que se mostrará al pasar el cursor sobre el texto" -->
+    ? title="Especifica el significado completo de la abreviatura o acrónimo, que se mostrará al pasar el cursor sobre el texto." -->
     Kilometros de la tierra a la luna: 384.400 <abbr title="Kilómetros">Kms</abbr> <!-- *Abrevitura (abbr): Etiqueta para declarar una abreviatura, la cual al pasar el mouse encima se mostrara el significado de la misma.* --><br>
     Es muy interesante lo que hace la <acronym title="National Aeronautics and Space Administration">NASA</acronym> <!-- *Acronimos (acronym): Etiqueta para declarar acronimos (palabras formadas por las iniciales), la cual al pasar el mouse encima se mostrara el significado de la misma.* --><br>
 
     <!-- Todo - Enlaces (a): Etiqueta para convertir texto o elementos en enlaces clickeables que dirigen a otras páginas o recursos. -->
     <!-- ?Propiedades:
-    ? href="Especifica la ruta a la cual nos direccionara el texto al clickearlo" -->
+    ? href="Especifica la ruta a la cual nos direccionara el texto al clickearlo." -->
     <!-- ?Propiedades (Opcionales): 
-    ? target="Propiedad que especifica el "objetivo"/funcion del direccionamiento al clickear el texto" -->
+    ? target="Propiedad que especifica el "objetivo"/funcion del direccionamiento al clickear el texto." -->
     <a href="https://www.rammstein.de/es/news/">Rammsten Shop</a> <!-- *Texto con enlace el cual direcciona en la misma pestaña.* --><br>
     <a href="https://queentiendaonline.com" target="_blank">Queen Shop</a> <!-- *Texto con enlace el cual direcciona en una nueva pestaña.* --><br>
     <a href="mailto:chrisalegriaruiz484@gmail.com">Send a Email To Chris</a> <!-- *Texto con enlace que abre el cliente de correo predeterminado del usuario y genera automáticamente un nuevo correo dirigido al destinatario especificado en el atributo href.* -->
@@ -122,8 +122,8 @@
 
     <!-- Todo - Citas (blockquote, q): Etiquetas para colocar citas y referenciar las mismas. -->
     <!-- ?Propiedades (Opcionales): 
-    ? cite="Direccion url de donde se extrajo la cita" 
-    ? lang="Especifica el idioma de la cita en caso de encontrase en uno difente al usado en la pagina web" -->
+    ? cite="Direccion url de donde se extrajo la cita." 
+    ? lang="Especifica el idioma de la cita en caso de encontrase en uno difente al usado en la pagina web." -->
     <blockquote>"You are the one that I wanted to find." Coldplay</blockquote> <!-- *Cita en bloque (blockquote): Etiqueta donde se colocan comillas de manera manual, abarca todo un bloque.* -->
     <q>You know you make my world light up.</q> Coldplay  <!-- *Cita en linea (q): Etiqueta donde se colocan comillas de manera automatica, abarca solo el texto en el que se declare.* --><br>
     <q cite="https://japonesenlanube.com" lang="JA-ja">Suki koso mono no joozo nare.</q> <!-- *Cita en linea (q) con referencia de donde se extrajo la cita y el idioma del texto extraido (japones).* --><hr>
@@ -134,12 +134,16 @@
 <!-- ~Etiquetas Imagenes -->
 <!-- Todo - Imagenes (img): Etiqueta para insertar imagenes dentro de la pagina web. -->
 <!-- ?Propiedades:
-? src="Especifica la ruta a la cual nos direccionara el texto al clickearlo"
+? src="Especifica la ruta a la cual nos direccionara el texto al clickearlo."
 <!-- ?Propiedades (Opcionales): 
-? alt: Proporciona una descripción alternativa para la imagen, útil para personas con problemas visuales o como texto que se muestra si la imagen no se carga correctamente. -->
-<img src="/html/img/RDR2.jpg"> <!-- *Insercion de imagen que se encuentra dentro del proyecto usando direccion entre carpetas* -->
+? alt="Proporciona una descripción alternativa para la imagen, útil para personas con problemas visuales o como texto que se muestra si la imagen no se carga correctamente." 
+? height="Especifica la altura de la imagen, donde comunmente se usan pixeles(px), Nota: Si solo se define este valor, el tamaño de la imagen se ajustará proporcionalmente. Para cambiar la altura y el ancho de forma independiente, se deben especificar ambos atributos: height y width."
+? width="Especifica el ancho de la imagen, donde comunmente se usan pixeles(px)." -->
+
+<img src="/html/assets/img/RDR2.jpg" width=""> <!-- *Insercion de imagen que se encuentra dentro del proyecto usando direccion entre carpetas* -->
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTAFPUkmf9yU3QTAZQECyg-m_PHOAxl6Pjkw&s"> <!-- *Insercion de imagen que se encuentra en la web usando la direccion url * -->
 <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" alt="Imagen con Geralt De Rivia sosteniendo una espada"> <!-- *Insercion de imagen que se encuentra en la web, ademas de integrar descripcion del contenido mostrado en la misma* -->
+
 <hr>
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -164,12 +168,17 @@
 <!-- Todo - Elementos en linea: Elementos o etiquetas que ocupan o usan solamente una linea o unicamente lo que contiene dentro dicho elemento. -->
 <i style="background-color: aqua;">Hola</i>
 
-<!-- Todo - Atributo de insercion de recursos (src): Define la ubicación de un archivo o recurso que se cargará en la página (como imágenes, videos o scripts). Puede apuntar a recursos internos del proyecto o externos mediante una URL. --><br>
-<img src="https://store-images.s-microsoft.com/image/apps.21855.69479559702140610.dad571dd-6b2c-42a6-be9e-fd11d891d66c.e16a97f5-c50d-4fe7-91fd-1ed4a19aaca7?q=90&w=480&h=270">
-
 <!-- Todo - Atributo de referencia a recursos (href): Define la ubicación de un recurso externo o interno al que un elemento hará referencia, como enlaces o archivos de estilo. --><br>
 <a href="https://store.steampowered.com/?l=spanish">Tienda de Steam</a>
 
+<!-- Todo - Atributo de insercion de recursos (src): Define la ubicación de un archivo o recurso que se cargará en la página (como imágenes, videos o scripts). Puede apuntar a recursos internos del proyecto o externos mediante una URL. --><br>
+<img src="https://store-images.s-microsoft.com/image/apps.21855.69479559702140610.dad571dd-6b2c-42a6-be9e-fd11d891d66c.e16a97f5-c50d-4fe7-91fd-1ed4a19aaca7?q=90&w=480&h=270">
+
+<!-- Todo - Navegación entre carpetas internas (/): Se utiliza "/" para definir rutas relativas a archivos o recursos dentro del proyecto, permitiendo acceder a carpetas internas desde la ubicación actual. -->
+<img src="/html/assets/img/artorias.jpg">
+
+<!-- Todo - Navegación entre carpetas externas (../): Se utiliza "../" para definir rutas relativas a archivos o recursos dentro del proyecto, permitiendo acceder a carpetas externas desde la ubicación actual. -->
+<img src="../resources/assets/img/oscar.jpg">
 
 </html>
 
