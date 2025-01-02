@@ -4,6 +4,4 @@
 
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 <!-- ^Carpetas -->
--Assets: Carpeta que contiene otras carpetas de todos los archivos que son estaticos (imagenes, iconos, videos, etc..).
-
-
+-Assets: Carpeta que contiene otras carpetas de todos aquellos archivos que son estaticos (imagenes, iconos, videos, etc..).

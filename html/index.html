@@ -1,6 +1,9 @@
 <!-- Html: Es huesos y musculos. -->
 <!-- Diferentes etiquetas: El navegador lee dichas etiquetas y es mas eficiente. -->
+<!-- Comentario: Texto o codigo que solamente el desarrollador puede ver, ademas estos no tendran ningun efecto en lo que visualiza el usuario -->
 
+<!-- Ctrl + }: Apertura y cierre de etiqueta para comentario -->
+<!-- Seleccionar Texto Con Doble Click + Ctrl + }: Convierte texto o codigo en comentario-->
 <!-- Alt + Shift + F: Auto indentacion -->
 <!-- Click En Linea + Alt + Shif + Click Izquiero En Otra Linea: Escritura Simultanea En Varios Renglones. -->
 <!-- Mantener Precionado Alt + Click Izquiero En Diversas Partes: : Escritura Simultanea En Lugares Especificos. -->
@@ -30,7 +33,7 @@
     ? content="Contenido de metadato." -->
     <meta charset="UTF-8"> <!-- *Se declara la distribucion del teclado.* -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- *Se define que sea compatible con el navegador Edge.* -->
-    <meta http-equiv="refresh" content="5; "https://www.coldplay.com/""> <!-- *Se define el tiempo en segundos para refrescar la página y se especifica una URL a la que redirigirá tras refrescarse (quitar "").* -->
+    <meta http-equiv="refresh" cotetn="5; https://www.coldplay.com/"> <!-- *Se define el tiempo en segundos para refrescar la página y se especifica una URL a la que redirigirá tras refrescarse (quitar "").* -->
     <meta http-equiv="cookie" content="user=ChrisAlegria;"> <!-- *Se carga y almacena en el navegador una cookie con un usuario (Mejor uso en JS).* -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- *Se establece la escala en la que se mostrara la pagina.* -->
     <meta name="author" content="Chris Alegria"> <!-- *Se define al autor.* -->
@@ -118,7 +121,7 @@
     <a href="https://queentiendaonline.com" target="_blank">Queen Shop</a> <!-- *Texto con enlace el cual direcciona en una nueva pestaña.* --><br>
     <a href="mailto:chrisalegriaruiz484@gmail.com">Send a Email To Chris</a> <!-- *Texto con enlace que abre el cliente de correo predeterminado del usuario y genera automáticamente un nuevo correo dirigido al destinatario especificado en el atributo href.* --><br>    |  
     <a href="tel:+525291975634" target="_blank">Call Chris</a> <!-- *Texto con enlace que abre el cliente de telefono predeterminado del usuario y llama al destinatario especificado en el atributo href.* --><br>   
-    <a href="/resources/assets/img/oscar.jpg" target="_blank">Oscar De Astora</a> <!-- *Texto con enlace a un archivo local del proyecto (imagen), el cual lo abre en una pestaña nueva* --><br>
+    <a href="/resources/assets/img/oscar.jpg" target="_blank">Oscar De Astora</a> <!-- *Texto con enlace a un archivo que se encuentra dentro del proyecto (imagen), el cual lo abre en una pestaña nueva* --><br>
     <a href="/html/pages/videojuegos.html">Seccion Videojuegos</a> <!-- *Texto con enlace a un archivo local del proyecto (seccion videjuegos.html), el cual lo abre en la misma pestaña* --><br>
     <a href="https://demonslayer-anime.com" target="_blank"> <!-- *Se define la dirección a la que se redirigirá al hacer clic en el enlace, en este caso, una página web externa.* -->
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDTM2a68yFzs0mkvaRLXc1_T4mQulnSNpeQ&s">     <!-- *Se inserta una imagen desde una URL externa. Al estar dentro de la etiqueta <a>, la imagen se vuelve clickeable, redirigiendo al enlace especificado.* -->
@@ -135,28 +138,65 @@
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 <!-- ~Etiquetas Multimedia -->
-<!-- Todo - Imagenes (img): Etiqueta para insertar imagenes dentro de la pagina web. -->
-<!-- ?Propiedades:
-? src="Especifica la ruta a la cual nos direccionara el texto al clickearlo." -->
+<!-- Todo - Imagenes (img): Etiqueta para insertar imagenes dentro de la pagina web, de forma predeterminada la imagen se mostrará con su tamaño original . -->
+<!-- ?Propiedades
+? src="Define la ruta local o la URL desde donde se obtendrá la imagen para mostrarla en la página."
 <!-- ?Propiedades (Opcionales): 
 ? alt="Proporciona una descripción alternativa para la imagen, útil para personas con problemas visuales o como texto que se muestra si la imagen no se carga correctamente." 
 ? height="Especifica la altura de la imagen, donde comunmente se usan pixeles(px), Nota: Si solo se define este valor, el tamaño de la imagen se ajustará proporcionalmente. Para cambiar la altura y el ancho de forma independiente, se deben especificar ambos atributos: height y width."
 ? width="Especifica el ancho de la imagen, donde comunmente se usan pixeles(px),  Nota: Si solo se define este valor, el tamaño de la imagen se ajustará proporcionalmente. Para cambiar la altura y el ancho de forma independiente, se deben especificar ambos atributos: height y width." -->
-<img src="/html/assets/img/RDR2.jpg"> <!-- *Insercion de imagen que se encuentra dentro del proyecto usando direccion entre carpetas* -->
+<img src="/html/assets/image/RDR2.jpg"> <!-- *Insercion de imagen que se encuentra dentro del proyecto usando direccion entre carpetas* -->
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTAFPUkmf9yU3QTAZQECyg-m_PHOAxl6Pjkw&s"> <!-- *Insercion de imagen que se encuentra en la web usando la direccion url * -->
 <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" alt="Imagen con Geralt De Rivia sosteniendo una espada"> <!-- *Insercion de imagen que se encuentra en la web, ademas de integrar descripcion del contenido mostrado en la misma* -->
-<img src="https://cms.rhinoshield.app/public/images/small_ip_page_pompompurin_cinnamoroll_icon_47f56894fa.jpg" height="100px" width="200px"> <!-- *Insercion de imagen que se encuentra en la web, en la cual se modifico el alto y el ancho de la misma de forma independiente* -->
+<img src="https://upload.wikimedia.org/wikipedia/en/0/04/Hollow_Knight_first_cover_art.webp" height="250px"> <!-- *Insercion de imagen que se encuentra en la web, en la cual se modifico su tamaño de forma general* -->
+<img src="https://cms.rhinoshield.app/public/images/small_ip_page_pompompurin_cinnamoroll_icon_47f56894fa.jpg" height="100px" width="200px"> <!-- *Insercion de imagen que se encuentra en la web, en la cual se modifico el alto y el ancho de la misma de forma independiente* --><br>
 
-<!-- Todo - Video (img): Etiqueta para insertar videos dentro de la pagina web. -->
+<!-- Todo - Video (video): Etiqueta para insertar videos dentro de la pagina web, de forma predeterminada el video se mostrará con su tamaño original. -->
 <!-- ?Propiedades:
-? src="Especifica la ruta a la cual nos direccionara el texto al clickearlo." -->
+? src="Define la ruta local o la URL desde donde se obtendrá el video para mostrarlo en la página." -->
+<!-- ?Propiedades (Opcionales): 
+? height="Especifica la altura de la imagen, donde comunmente se usan pixeles(px), Nota: Si solo se define este valor, el tamaño de la imagen se ajustará proporcionalmente. Para cambiar la altura y el ancho de forma independiente, se deben especificar ambos atributos: height y width."
+? width="Especifica el ancho de la imagen, donde comunmente se usan pixeles(px),  Nota: Si solo se define este valor, el tamaño de la imagen se ajustará proporcionalmente. Para cambiar la altura y el ancho de forma independiente, se deben especificar ambos atributos: height y width." 
+? poster="Asigna una imagen de portada al video, similar a un banner en los videos de YouTube. Este atributo especifica la ruta local dentro del proyecto o una URL externa donde se encuentra la imagen que se mostrará antes de que el video comience a reproducirse." 
+? autoplay: Permite que el video se reproduzca automáticamente al cargarse la página, sin necesidad de interacción del usuario.
+? muted: Indica que el video estará silenciado de forma predeterminada al cargarse, sin reproducir sonido. 
+? loop: Hace que el video se reproduzca de manera continua, es decir, al finalizar, comenzará nuevamente desde el principio.
+? controls: Permite al usuario interactuar con el video mediante controles integrados, como botones de pausa, reproducción, silenciar, descarga, barra de progreso, etc.. -->
+<video src="/html/assets/video/Cinnamoroll-WakeUp.mp4" height="300px" ></video> <!-- *Insercion de video que se encuentra dentro del proyecto, el cual por defecto solo muestra la imagen inicial (primer frame del video), ademas de define su tamaño general.* -->
+<video src="/html/assets/video/Cinnamoroll-GettingHandsome.mp4" height="300px" autoplay muted></video> <!-- *<!-- *Insercion de video que se encuentra dentro del proyecto, el cual por defecto se reproducira automaticamente pero solo una vez (no de manera infinita) y estara silecionado de forma predeterminada, ademas de define su tamaño genera.* -->
+<video src="/html/assets/video/Cinnamoroll-Dancing.mp4" height="300" autoplay muted loop></video> <!-- *<!-- *Insercion de video que se encuentra dentro del proyecto, el cual por defecto se reproducira automaticamente pero esta vez en loop (de manera infinita) y estara silecionado de forma predeterminada, ademas de define su tamaño genera.* -->
+<video src="/html/assets/video/Cinnamoroll-Singing.mp4" height="300px" controls></video> <!-- *Insercion de video que se encuentra dentro del proyecto, el cual por defecto integra controles de manejo para el usuario, ademas se define su tamaño general. * -->
+<video src="/html/assets/video/Cinnamoroll-MokaChan.mp4" height="300px" controls poster="/html/assets/image/Cinnamoroll-Cover.jpg"><p>Hola mundo</p></video> <!-- *Isercion de video que se encuentra dentro del proyecto, el cual incluye controles, se difene el tamaño general del mismo y se le integra una imagen para poster o banner ingresando su ubicacion* --><br>
 
+<!-- Todo - Audio (audio): Etiqueta para insertar audios dentro de la pagina web, el cual si no se le asignan controles este no se mostrara. -->
+<!-- ?Propiedades:
+? src="Define la ruta local o la URL desde donde se obtendrá el audio para mostrarlo en la página." -->
+<!-- ?Propiedades (Opcionales): 
+? controls: Permite al usuario interactuar con el audio mediante controles integrados, como botones de pausa, reproducción, silenciar, descarga, barra de progreso, etc..
+? autoplay: Permite que el audio se reproduzca automáticamente al cargarse la página, sin necesidad de interacción del usuario.
+? muted: Indica que el audio estará silenciado de forma predeterminada al cargarse, sin reproducir sonido. 
+? loop: Hace que el audio se reproduzca de manera continua, es decir, al finalizar, comenzará nuevamente desde el principio.-->
+<audio src="/html/assets/audio/Coldplay-iAAM.mp3"></audio> <!-- *Insercion de audio que se encuentra dentro del proyecto, el cual de forma por defecto no se mostrara ya que no incluye controles* -->
+<audio src="/html/assets/audio/Ghost-Mary On A Cross.mp3" autoplays></audio> <!-- *Insercion de audio que se encuentra dentro del proyecto, el cual de forma por defecto no se mostrara ya que no incluye controles, pero se establecio que se autoreproduzca pese a no visualizarse y solo se reproducira una vez, (modificar a autoplays a autoplay)* -->
+<audio src="/html/assets/audio/Rammstein-Sonne.mp3" controls></audio> <!-- *Insercion de audio que se encuentra dentro del proyecto, el cual ahora es visible en la pagina ya que ademas se integraron los controles de manejo para el usuario* -->
+<audio src="/html/assets/audio/Queen-Radio Ga Ga.mp3" controls autoplay muted></audio>  <!-- *Insercion de audio que se encuentra dentro del proyecto, el cual incluye controles, ademas se declara que se reproduzca de forma automatica al cargarse la pagina y que por defecto este muteado* -->
+<audio src="/html/assets/audio/ACDC-Thunderstruck.mp3" controls autoplay loop muted></audio>  <!-- *Insercion de audio que se encuentra dentro del proyecto, el cual incluye controles, ademas se declara que se reproduzca de forma automatica y en loop (infinita) al cargarse la pagina y que por defecto este muteado* --><br>
+
+
+<!-- Todo - Recursos/Elementos (source): . -->
+<!-- ?Propiedades: 
+
+?-->
+<video height="300px" controls>
+    <source src="/html/assets/video/Cinnamoroll-MokaChan.mp4">
+    <p>Texto que se mostrara en caso del que video no lo cargue el navegador</p>
+</video>
 <hr>
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 <!-- ~Conceptos Basicos Aplicados -->
 <!-- Todo - Anidamiento: Colocar elementos dentro de otros elementos. -->
-<!-- Todo- Indentacion: Forma visual de ver las aperturas y cierres de etiquetas que contienen mas informacion (margen). -->
+<!-- Todo - Indentacion: Forma visual de ver las aperturas y cierres de etiquetas que contienen mas informacion (margen). -->
 <section>
     <article>
         <ul>
@@ -182,7 +222,7 @@
 <img src="https://store-images.s-microsoft.com/image/apps.21855.69479559702140610.dad571dd-6b2c-42a6-be9e-fd11d891d66c.e16a97f5-c50d-4fe7-91fd-1ed4a19aaca7?q=90&w=480&h=270">
 
 <!-- Todo - Navegación entre carpetas internas (/): Se utiliza "/" para definir rutas relativas a archivos o recursos dentro del proyecto, permitiendo acceder a carpetas internas desde la ubicación actual. -->
-<img src="/html/assets/img/artorias.jpg">
+<img src="/html/assets/image/artorias.jpg">
 
 <!-- Todo - Navegación entre carpetas externas (../): Se utiliza "../" para definir rutas relativas a archivos o recursos dentro del proyecto, permitiendo acceder a carpetas externas desde la ubicación actual. -->
 <img src="../resources/assets/img/oscar.jpg">
