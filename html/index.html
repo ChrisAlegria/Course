@@ -1,6 +1,7 @@
 <!-- Html: Es huesos y musculos. -->
 <!-- Diferentes etiquetas: El navegador lee dichas etiquetas y es mas eficiente. -->
 <!-- Comentario: Texto o codigo que solamente el desarrollador puede ver, ademas estos no tendran ningun efecto en lo que visualiza el usuario -->
+<!-- Lectura del Código: HTML procesa el código de arriba hacia abajo. Lo que se especifica primero es lo que se mostrará en la parte superior. Esto puede generar efectos, como en el caso de <picture>, donde si se define una imagen <img> antes de <source>, la imagen se mostrará primero antes de que el navegador seleccione el recurso adecuado de <source>. -->
 
 <!-- Ctrl + }: Apertura y cierre de etiqueta para comentario -->
 <!-- Seleccionar Texto Con Doble Click + Ctrl + }: Convierte texto o codigo en comentario-->
@@ -121,8 +122,8 @@
     <a href="https://queentiendaonline.com" target="_blank">Queen Shop</a> <!-- *Texto con enlace el cual direcciona en una nueva pestaña.* --><br>
     <a href="mailto:chrisalegriaruiz484@gmail.com">Send a Email To Chris</a> <!-- *Texto con enlace que abre el cliente de correo predeterminado del usuario y genera automáticamente un nuevo correo dirigido al destinatario especificado en el atributo href.* --><br>    |  
     <a href="tel:+525291975634" target="_blank">Call Chris</a> <!-- *Texto con enlace que abre el cliente de telefono predeterminado del usuario y llama al destinatario especificado en el atributo href.* --><br>   
-    <a href="/resources/assets/img/oscar.jpg" target="_blank">Oscar De Astora</a> <!-- *Texto con enlace a un archivo que se encuentra dentro del proyecto (imagen), el cual lo abre en una pestaña nueva* --><br>
-    <a href="/html/pages/videojuegos.html">Seccion Videojuegos</a> <!-- *Texto con enlace a un archivo local del proyecto (seccion videjuegos.html), el cual lo abre en la misma pestaña* --><br>
+    <a href="/resources/assets/img/oscar.jpg" target="_blank">Oscar De Astora</a> <!-- *Texto con enlace a un archivo que se encuentra dentro del proyecto (imagen), el cual lo abre en una pestaña nueva.* --><br>
+    <a href="/html/pages/videojuegos.html">Seccion Videojuegos</a> <!-- *Texto con enlace a un archivo local del proyecto (seccion videjuegos.html), el cual lo abre en la misma pestaña.* --><br>
     <a href="https://demonslayer-anime.com" target="_blank"> <!-- *Se define la dirección a la que se redirigirá al hacer clic en el enlace, en este caso, una página web externa.* -->
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDTM2a68yFzs0mkvaRLXc1_T4mQulnSNpeQ&s">     <!-- *Se inserta una imagen desde una URL externa. Al estar dentro de la etiqueta <a>, la imagen se vuelve clickeable, redirigiendo al enlace especificado.* -->
     </a>
@@ -145,13 +146,13 @@
 ? alt="Proporciona una descripción alternativa para la imagen, útil para personas con problemas visuales o como texto que se muestra si la imagen no se carga correctamente." 
 ? height="Especifica la altura de la imagen, donde comunmente se usan pixeles(px), Nota: Si solo se define este valor, el tamaño de la imagen se ajustará proporcionalmente. Para cambiar la altura y el ancho de forma independiente, se deben especificar ambos atributos: height y width."
 ? width="Especifica el ancho de la imagen, donde comunmente se usan pixeles(px),  Nota: Si solo se define este valor, el tamaño de la imagen se ajustará proporcionalmente. Para cambiar la altura y el ancho de forma independiente, se deben especificar ambos atributos: height y width." -->
-<img src="/html/assets/image/RDR2.jpg"> <!-- *Insercion de imagen que se encuentra dentro del proyecto usando direccion entre carpetas* -->
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTAFPUkmf9yU3QTAZQECyg-m_PHOAxl6Pjkw&s"> <!-- *Insercion de imagen que se encuentra en la web usando la direccion url * -->
-<img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" alt="Imagen con Geralt De Rivia sosteniendo una espada"> <!-- *Insercion de imagen que se encuentra en la web, ademas de integrar descripcion del contenido mostrado en la misma* -->
-<img src="https://upload.wikimedia.org/wikipedia/en/0/04/Hollow_Knight_first_cover_art.webp" height="250px"> <!-- *Insercion de imagen que se encuentra en la web, en la cual se modifico su tamaño de forma general* -->
-<img src="https://cms.rhinoshield.app/public/images/small_ip_page_pompompurin_cinnamoroll_icon_47f56894fa.jpg" height="100px" width="200px"> <!-- *Insercion de imagen que se encuentra en la web, en la cual se modifico el alto y el ancho de la misma de forma independiente* --><br>
+<img src="/html/assets/image/RDR2.jpg"> <!-- *Insercion de imagen que se encuentra dentro del proyecto usando direccion entre carpetas.* -->
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTAFPUkmf9yU3QTAZQECyg-m_PHOAxl6Pjkw&s"> <!-- *Insercion de imagen que se encuentra en la web usando la direccion url.* -->
+<img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" alt="Imagen con Geralt De Rivia sosteniendo una espada"> <!-- *Insercion de imagen que se encuentra en la web, ademas de integrar descripcion del contenido mostrado en la misma.* -->
+<img src="https://upload.wikimedia.org/wikipedia/en/0/04/Hollow_Knight_first_cover_art.webp" height="250px"> <!-- *Insercion de imagen que se encuentra en la web, en la cual se modifico su tamaño de forma general.* -->
+<img src="https://cms.rhinoshield.app/public/images/small_ip_page_pompompurin_cinnamoroll_icon_47f56894fa.jpg" height="100px" width="200px"> <!-- *Insercion de imagen que se encuentra en la web, en la cual se modifico el alto y el ancho de la misma de forma independiente.* --><br>
 
-<!-- Todo - Video (video): Etiqueta para insertar videos dentro de la pagina web, de forma predeterminada el video se mostrará con su tamaño original. -->
+<!-- Todo - Video (video): Etiqueta para insertar videos dentro de la pagina web, de forma predeterminada el video se mostrará con su tamaño original. Además, permite declarar versiones alternativas del video en diferentes formatos dentro de la misma etiqueta, utilizando la etiqueta <source>. -->
 <!-- ?Propiedades:
 ? src="Define la ruta local o la URL desde donde se obtendrá el video para mostrarlo en la página." -->
 <!-- ?Propiedades (Opcionales): 
@@ -166,9 +167,9 @@
 <video src="/html/assets/video/Cinnamoroll-GettingHandsome.mp4" height="300px" autoplay muted></video> <!-- *<!-- *Insercion de video que se encuentra dentro del proyecto, el cual por defecto se reproducira automaticamente pero solo una vez (no de manera infinita) y estara silecionado de forma predeterminada, ademas de define su tamaño genera.* -->
 <video src="/html/assets/video/Cinnamoroll-Dancing.mp4" height="300" autoplay muted loop></video> <!-- *<!-- *Insercion de video que se encuentra dentro del proyecto, el cual por defecto se reproducira automaticamente pero esta vez en loop (de manera infinita) y estara silecionado de forma predeterminada, ademas de define su tamaño genera.* -->
 <video src="/html/assets/video/Cinnamoroll-Singing.mp4" height="300px" controls></video> <!-- *Insercion de video que se encuentra dentro del proyecto, el cual por defecto integra controles de manejo para el usuario, ademas se define su tamaño general. * -->
-<video src="/html/assets/video/Cinnamoroll-MokaChan.mp4" height="300px" controls poster="/html/assets/image/Cinnamoroll-Cover.jpg"><p>Hola mundo</p></video> <!-- *Isercion de video que se encuentra dentro del proyecto, el cual incluye controles, se difene el tamaño general del mismo y se le integra una imagen para poster o banner ingresando su ubicacion* --><br>
+<video src="/html/assets/video/Cinnamoroll-MokaChan.mp4" height="300px" controls poster="/html/assets/image/Cinnamoroll-Cover.jpg"><p>Hola mundo</p></video> <!-- *Isercion de video que se encuentra dentro del proyecto, el cual incluye controles, se difene el tamaño general del mismo y se le integra una imagen para poster o banner ingresando su ubicacion.* --><br>
 
-<!-- Todo - Audio (audio): Etiqueta para insertar audios dentro de la pagina web, el cual si no se le asignan controles este no se mostrara. -->
+<!-- Todo - Audio (audio): Etiqueta para insertar audios dentro de la pagina web, el cual si no se le asignan controles este no se mostrara. Además, permite declarar versiones alternativas del audio en diferentes formatos dentro de la misma etiqueta, utilizando la etiqueta <source>. -->
 <!-- ?Propiedades:
 ? src="Define la ruta local o la URL desde donde se obtendrá el audio para mostrarlo en la página." -->
 <!-- ?Propiedades (Opcionales): 
@@ -176,21 +177,39 @@
 ? autoplay: Permite que el audio se reproduzca automáticamente al cargarse la página, sin necesidad de interacción del usuario.
 ? muted: Indica que el audio estará silenciado de forma predeterminada al cargarse, sin reproducir sonido. 
 ? loop: Hace que el audio se reproduzca de manera continua, es decir, al finalizar, comenzará nuevamente desde el principio.-->
-<audio src="/html/assets/audio/Coldplay-iAAM.mp3"></audio> <!-- *Insercion de audio que se encuentra dentro del proyecto, el cual de forma por defecto no se mostrara ya que no incluye controles* -->
-<audio src="/html/assets/audio/Ghost-Mary On A Cross.mp3" autoplays></audio> <!-- *Insercion de audio que se encuentra dentro del proyecto, el cual de forma por defecto no se mostrara ya que no incluye controles, pero se establecio que se autoreproduzca pese a no visualizarse y solo se reproducira una vez, (modificar a autoplays a autoplay)* -->
-<audio src="/html/assets/audio/Rammstein-Sonne.mp3" controls></audio> <!-- *Insercion de audio que se encuentra dentro del proyecto, el cual ahora es visible en la pagina ya que ademas se integraron los controles de manejo para el usuario* -->
-<audio src="/html/assets/audio/Queen-Radio Ga Ga.mp3" controls autoplay muted></audio>  <!-- *Insercion de audio que se encuentra dentro del proyecto, el cual incluye controles, ademas se declara que se reproduzca de forma automatica al cargarse la pagina y que por defecto este muteado* -->
-<audio src="/html/assets/audio/ACDC-Thunderstruck.mp3" controls autoplay loop muted></audio>  <!-- *Insercion de audio que se encuentra dentro del proyecto, el cual incluye controles, ademas se declara que se reproduzca de forma automatica y en loop (infinita) al cargarse la pagina y que por defecto este muteado* --><br>
+<audio src="/html/assets/audio/Coldplay-iAAM.mp3"></audio> <!-- *Insercion de audio que se encuentra dentro del proyecto, el cual de forma por defecto no se mostrara ya que no incluye controles.* -->
+<audio src="/html/assets/audio/Ghost-Mary On A Cross.mp3" autoplays></audio> <!-- *Insercion de audio que se encuentra dentro del proyecto, el cual de forma por defecto no se mostrara ya que no incluye controles, pero se establecio que se autoreproduzca pese a no visualizarse y solo se reproducira una vez, (modificar a autoplays a autoplay).* -->
+<audio src="/html/assets/audio/Rammstein-Sonne.mp3" controls></audio> <!-- *Insercion de audio que se encuentra dentro del proyecto, el cual ahora es visible en la pagina ya que ademas se integraron los controles de manejo para el usuario.* -->
+<audio src="/html/assets/audio/Queen-Radio Ga Ga.mp3" controls autoplay muted></audio>  <!-- *Insercion de audio que se encuentra dentro del proyecto, el cual incluye controles, ademas se declara que se reproduzca de forma automatica al cargarse la pagina y que por defecto este muteado.* -->
+<audio src="/html/assets/audio/ACDC-Thunderstruck.mp3" controls autoplay loop muted></audio>  <!-- *Insercion de audio que se encuentra dentro del proyecto, el cual incluye controles, ademas se declara que se reproduzca de forma automatica y en loop (infinita) al cargarse la pagina y que por defecto este muteado.* --><br>
 
-
-<!-- Todo - Recursos/Elementos (source): . -->
+<!-- Todo - Recursos/Elementos (source): Etiqueta utilizada para especificar un recurso, como un archivo de video, audio o imagen. A diferencia de la propiedad "src", "source" permite declarar múltiples versiones de un recurso, y se emplea exclusivamente dentro de etiquetas con cierre, como <video>, <audio> o <picture>. Esto asegura que el navegador elija automáticamente el formato o versión más adecuada según la compatibilidad del navegador, o incluso seleccione una versión específica basada en condiciones como el tamaño de pantalla o la resolución. -->
 <!-- ?Propiedades: 
-
-?-->
-<video height="300px" controls>
-    <source src="/html/assets/video/Cinnamoroll-MokaChan.mp4">
-    <p>Texto que se mostrara en caso del que video no lo cargue el navegador</p>
+? src="Define la ruta local o la URL desde donde se obtendrá el recurso para mostrarlo en la página, esto solo para el caso de video y audio." 
+? srcset="Esta propiedad esta reservada unicamente para cuando source se encuentre dentro de la etiqueta <picture> y sustituira a "src".  Define la ruta local o la URL desde donde se obtendrá el recurso (imagen), y además permite especificar el tamaño de la imagen (en píxeles o por resolución) para ayudar al navegador a elegir la versión más adecuada según las condiciones de la pantalla (como resolución o tamaño de dispositivo)." -->
+<!-- ?Propiedades (Opcionales):
+? media="Especifica una condición o rango de características del dispositivo (como el ancho o la resolución de la pantalla) en las cuales se aplicará el recurso definido. Esto permite adaptar el contenido a diferentes tamaños de pantalla o dispositivos. Esta propiedad es exclusiva para la etiqueta <source> cuando se utiliza dentro de <picture> o <video>." --> 
+<video height="300px" controls> <!-- *Apertura de la etiqueta de video, donde se especifica el tamaño y se asignan controles a cualquier versión de video que se cargue en la página.* -->
+    <source src="/html/assets/video/Naruto-MilAñosMuerte.mp4"> <!-- *Se especifica un recurso de video en formato MP4, que el navegador utilizará si es el formato más adecuado para él.* -->
+    <source src="/html/assets/video/Naruto-MilAñosMuerte.mov"> <!-- *Se especifica un recurso de video en formato MOV, que el navegador utilizará si es el formato más adecuado para él.* -->
+    <source src="/html/assets/video/Naruto-MilAñosMuerte.avi"> <!-- *Se especifica un recurso de video en formato AVI, que el navegador utilizará si es el formato más adecuado para él.* -->
+</video> <!-- *Cierre de la etiqueta de video.* -->
+<video src="">
+    LO de la resolucion
 </video>
+<audio controls> <!-- *Apertura de la etiqueta de audio+, donde se asignan controles a cualquier versión de audio que se cargue en la página.* -->
+    <source src="assets/audio/Shingeki no Kyojin-Guren no Yumiya.mp3"> <!-- *Se especifica un recurso de audio en formato MP3, que el navegador utilizará si es el formato más adecuado para él.* -->
+    <source src="assets/audio/Shingeki no Kyojin-Guren no Yumiya.flac"> <!-- *Se especifica un recurso de audio en formato FLAC, que el navegador utilizará si es el formato más adecuado para él.* -->
+    <source src="assets/audio/Shingeki no Kyojin-Guren no Yumiya.wav"> <!-- *Se especifica un recurso de audio en formato WAV, que el navegador utilizará si es el formato más adecuado para él.* -->
+</audio> <!-- *Cierre de la etiqueta de audio.* -->
+
+<!-- Todo - Fotos (pictures): Etiqueta utilizada exclusivamente para proporcionar versiones alternativas de una imagen, permitiendo que se cargue la versión más adecuada según el tamaño de la pantalla, la resolución o el tipo de dispositivo. Se utiliza junto con la etiqueta <source> para declarar diferentes imágenes, y la etiqueta <img> sirve como imagen de respaldo en caso de que el recurso de <source> no sea accesible o compatible. -->
+<picture> <!-- *Se abre la etiqueta de picture el cual, para que funcione y se muestren los elementos de source se requiere establecer otra imagen con la etiqueta <img> para mostrarla en caso de que las imagenes de source fallen.* -->
+    <source srcset="/html/assets/image/Rengoku-Happy.jpg 6000w"> <!-- *Se especifica un recurso de imagen en formato JPG, que el navegador utilizará si es el formato más adecuado para él, Asimismo, se le indica un tamaño de 6000w, donde "w" representa el ancho en píxeles (en este caso, 6000 píxeles).* -->
+    <source srcset="/html/assets/image/Rengoku-Happy.png 600w"> <!-- *Se especifica un recurso de imagen en formato PNG, que el navegador utilizará si es el formato más adecuado para él, Asimismo, se le indica un tamaño de 6000w, donde "w" representa el ancho en píxeles (en este caso, 6000 píxeles).* -->
+    <source srcset="/html/assets/image/Rengoku-Happy.bmp 600w"> <!-- *Se especifica un recurso de imagen en formato BMP, que el navegador utilizará si es el formato más adecuado para él, Asimismo, se le indica un tamaño de 6000w, donde "w" representa el ancho en píxeles (en este caso, 6000 píxeles).* -->
+    <img src="/html/assets/image/No Image Available.jpg" alt="Imagen que muestra el texto de que no hay imagenes disponibles" height=""> <!-- *Imagen de respaldo en caso de que las de <source> fallen* -->
+</picture> 
 <hr>
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -247,6 +266,7 @@
     *i: italic
     *em: emphasis
     *src: source
+    *srcset: source set
     *href: hyperlink reference
     *pre: preformatted
     *sup: superscript
