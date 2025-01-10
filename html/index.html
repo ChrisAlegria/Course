@@ -46,7 +46,7 @@
     ? rel="Especifica el tipo de recurso a vincular y la manera en que la pagina lo mostrara o usara." 
     ? href="Especifica la ruta o ubicación donde se encuentra el archivo." -->
     <link rel="stylesheet" href="/css/style.css"> <!-- *Especifica que usara una hoja de estilos y la ubicacion de la misma.* -->
-    <link rel="shortcut icon" href="/html/assets/img/favicon.ico" type="image/x-icon"> <!-- *Establece un icono en la pestaña de la pagina y se especifica la ubicacion del icono.* -->
+    <link rel="shortcut icon" href="/html/assets/icon/favicon.ico" type="image/x-icon"> <!-- *Establece un icono en la pestaña de la pagina y se especifica la ubicacion del icono.* -->
 
     <!-- Todo - Titulo (title): Etiqueta que asigna un titulo a la pestaña. -->
     <title>Curso HTML</title> <!-- *Se ingresa el titulo a mostrar en la pestaña de la pagina.* -->
@@ -120,7 +120,7 @@
     ? target="Propiedad que especifica el "objetivo"/funcion del direccionamiento al clickear el texto." -->
     <a href="https://www.rammstein.de/es/news/">Rammsten Shop</a> <!-- *Texto con enlace el cual direcciona en la misma pestaña.* --><br>
     <a href="https://queentiendaonline.com" target="_blank">Queen Shop</a> <!-- *Texto con enlace el cual direcciona en una nueva pestaña.* --><br>
-    <a href="mailto:chrisalegriaruiz484@gmail.com">Send a Email To Chris</a> <!-- *Texto con enlace que abre el cliente de correo predeterminado del usuario y genera automáticamente un nuevo correo dirigido al destinatario especificado en el atributo href.* --><br>    |  
+    <a href="mailto:chrisalegriaruiz484@gmail.com">Send a Email To Chris</a> <!-- *Texto con enlace que abre el cliente de correo predeterminado del usuario y genera automáticamente un nuevo correo dirigido al destinatario especificado en el atributo href.* --><br>  
     <a href="tel:+525291975634" target="_blank">Call Chris</a> <!-- *Texto con enlace que abre el cliente de telefono predeterminado del usuario y llama al destinatario especificado en el atributo href.* --><br>   
     <a href="/resources/assets/img/oscar.jpg" target="_blank">Oscar De Astora</a> <!-- *Texto con enlace a un archivo que se encuentra dentro del proyecto (imagen), el cual lo abre en una pestaña nueva.* --><br>
     <a href="/html/pages/videojuegos.html">Seccion Videojuegos</a> <!-- *Texto con enlace a un archivo local del proyecto (seccion videjuegos.html), el cual lo abre en la misma pestaña.* --><br>
@@ -150,7 +150,7 @@
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTAFPUkmf9yU3QTAZQECyg-m_PHOAxl6Pjkw&s"> <!-- *Insercion de imagen que se encuentra en la web usando la direccion url.* -->
 <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" alt="Imagen con Geralt De Rivia sosteniendo una espada"> <!-- *Insercion de imagen que se encuentra en la web, ademas de integrar descripcion del contenido mostrado en la misma.* -->
 <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Hollow_Knight_first_cover_art.webp" height="250px"> <!-- *Insercion de imagen que se encuentra en la web, en la cual se modifico su tamaño de forma general.* -->
-<img src="https://cms.rhinoshield.app/public/images/small_ip_page_pompompurin_cinnamoroll_icon_47f56894fa.jpg" height="100px" width="200px"> <!-- *Insercion de imagen que se encuentra en la web, en la cual se modifico el alto y el ancho de la misma de forma independiente.* --><br>
+<img src="https://i.3djuegos.com/juegos/19955/pizza_tower/fotos/ficha/pizza_tower-5915324.webp" height="130px" width="200px"> <!-- *Insercion de imagen que se encuentra en la web, en la cual se modifico el alto y el ancho de la misma de forma independiente.* --><br>
 
 <!-- Todo - Video (video): Etiqueta para insertar videos dentro de la pagina web, de forma predeterminada el video se mostrará con su tamaño original. Además, permite declarar versiones alternativas del video en diferentes formatos dentro de la misma etiqueta, utilizando la etiqueta <source>. -->
 <!-- ?Propiedades:
@@ -188,28 +188,30 @@
 ? src="Define la ruta local o la URL desde donde se obtendrá el recurso para mostrarlo en la página, esto solo para el caso de video y audio." 
 ? srcset="Esta propiedad esta reservada unicamente para cuando source se encuentre dentro de la etiqueta <picture> y sustituira a "src".  Define la ruta local o la URL desde donde se obtendrá el recurso (imagen), y además permite especificar el tamaño de la imagen (en píxeles o por resolución) para ayudar al navegador a elegir la versión más adecuada según las condiciones de la pantalla (como resolución o tamaño de dispositivo)." -->
 <!-- ?Propiedades (Opcionales):
-? media="Especifica una condición o rango de características del dispositivo (como el ancho o la resolución de la pantalla) en las cuales se aplicará el recurso definido. Esto permite adaptar el contenido a diferentes tamaños de pantalla o dispositivos. Esta propiedad es exclusiva para la etiqueta <source> cuando se utiliza dentro de <picture> o <video>." --> 
+? media="Especifica una condición o rango de características del dispositivo (como el ancho o la resolución de la pantalla) en las cuales se aplicará el recurso definido. Esto permite adaptar el contenido a diferentes tamaños de pantalla o dispositivos. Esta propiedad es exclusiva para la etiqueta <source> cuando se utiliza dentro de <picture> o <video>." 
+? type="Especifica el tipo y formato del recurso declarado en <source>. Aunque es opcional, facilita al navegador la identificación y el procesamiento correcto del recurso. El formato se puede especificar de la siguiente manera: tipo de recurso (video, audio, imagen) / tipo de archivo (mp4, mp3, jpg). En caso de que el formato no sea oficial o ampliamente conocido, se utiliza 'x-' (por ejemplo, 'x-avi')." -->
 <video height="300px" controls> <!-- *Apertura de la etiqueta de video, donde se especifica el tamaño y se asignan controles a cualquier versión de video que se cargue en la página.* -->
     <source src="/html/assets/video/Naruto-MilAñosMuerte.mp4"> <!-- *Se especifica un recurso de video en formato MP4, que el navegador utilizará si es el formato más adecuado para él.* -->
     <source src="/html/assets/video/Naruto-MilAñosMuerte.mov"> <!-- *Se especifica un recurso de video en formato MOV, que el navegador utilizará si es el formato más adecuado para él.* -->
-    <source src="/html/assets/video/Naruto-MilAñosMuerte.avi"> <!-- *Se especifica un recurso de video en formato AVI, que el navegador utilizará si es el formato más adecuado para él.* -->
+    <source src="/html/assets/video/Naruto-MilAñosMuerte.avi" type="video/x-msvideo"> <!-- *Se especifica un recurso de video en formato AVI, que el navegador utilizará si es el formato más adecuado para él. Ademas se especifica al navegador el tipo de archivo y formato del mismo para facilitar su carga.* -->
 </video> <!-- *Cierre de la etiqueta de video.* -->
-<video src="">
-    LO de la resolucion
-</video>
+<video height="300px" controls> <!-- *Apertura de la etiqueta de video, donde se especifica el tamaño y se asignan controles a cualquier versión de video que se cargue en la página.* -->
+    <source src="/html/assets/video/Its Just A Game-The Walking Dead 720p.mp4" media="(min-width: 1080px)"> <!-- *Se especifica un recurso de video en resolución 720p. El navegador lo utilizará si se cumple la condición establecida en la propiedad "media", que indica que este recurso se mostrará únicamente cuando la pantalla desde donde se visualice tenga una resolución minimo de 1080 píxeles de ancho.* -->
+    <source src="/html/assets/video/Its Just A Game-The Walking Dead 360p.mp4" media="(max-width: 720px)"> <!-- *Se especifica un recurso de video en resolución 720p. El navegador lo utilizará si se cumple la condición establecida en la propiedad "media", que indica que este recurso se mostrará únicamente cuando la pantalla desde donde se visualice tenga una resolución maximo de 720 píxeles de ancho.* -->
+</video> <!-- *Cierre de la etiqueta de video.* -->
 <audio controls> <!-- *Apertura de la etiqueta de audio+, donde se asignan controles a cualquier versión de audio que se cargue en la página.* -->
-    <source src="assets/audio/Shingeki no Kyojin-Guren no Yumiya.mp3"> <!-- *Se especifica un recurso de audio en formato MP3, que el navegador utilizará si es el formato más adecuado para él.* -->
-    <source src="assets/audio/Shingeki no Kyojin-Guren no Yumiya.flac"> <!-- *Se especifica un recurso de audio en formato FLAC, que el navegador utilizará si es el formato más adecuado para él.* -->
-    <source src="assets/audio/Shingeki no Kyojin-Guren no Yumiya.wav"> <!-- *Se especifica un recurso de audio en formato WAV, que el navegador utilizará si es el formato más adecuado para él.* -->
+    <source src="assets/audio/Shingeki no Kyojin-Guren no Yumiya.mp3" type="audio/mp3"> <!-- *Se especifica un recurso de audio en formato MP3, que el navegador utilizará si es el formato más adecuado para él. Ademas se especifica al navegador el tipo de archivo y formato del mismo para facilitar su carga.* -->
+    <source src="assets/audio/Shingeki no Kyojin-Guren no Yumiya.flac" type="audio/x-flac"> <!-- *Se especifica un recurso de audio en formato FLAC, que el navegador utilizará si es el formato más adecuado para él. Ademas se especifica al navegador el tipo de archivo y formato del mismo para facilitar su carga.* -->
+    <source src="assets/audio/Shingeki no Kyojin-Guren no Yumiya.wav" type="audio/x-wav"> <!-- *Se especifica un recurso de audio en formato WAV, que el navegador utilizará si es el formato más adecuado para él.* -->
 </audio> <!-- *Cierre de la etiqueta de audio.* -->
 
 <!-- Todo - Fotos (pictures): Etiqueta utilizada exclusivamente para proporcionar versiones alternativas de una imagen, permitiendo que se cargue la versión más adecuada según el tamaño de la pantalla, la resolución o el tipo de dispositivo. Se utiliza junto con la etiqueta <source> para declarar diferentes imágenes, y la etiqueta <img> sirve como imagen de respaldo en caso de que el recurso de <source> no sea accesible o compatible. -->
 <picture> <!-- *Se abre la etiqueta de picture el cual, para que funcione y se muestren los elementos de source se requiere establecer otra imagen con la etiqueta <img> para mostrarla en caso de que las imagenes de source fallen.* -->
     <source srcset="/html/assets/image/Rengoku-Happy.jpg 6000w"> <!-- *Se especifica un recurso de imagen en formato JPG, que el navegador utilizará si es el formato más adecuado para él, Asimismo, se le indica un tamaño de 6000w, donde "w" representa el ancho en píxeles (en este caso, 6000 píxeles).* -->
-    <source srcset="/html/assets/image/Rengoku-Happy.png 600w"> <!-- *Se especifica un recurso de imagen en formato PNG, que el navegador utilizará si es el formato más adecuado para él, Asimismo, se le indica un tamaño de 6000w, donde "w" representa el ancho en píxeles (en este caso, 6000 píxeles).* -->
-    <source srcset="/html/assets/image/Rengoku-Happy.bmp 600w"> <!-- *Se especifica un recurso de imagen en formato BMP, que el navegador utilizará si es el formato más adecuado para él, Asimismo, se le indica un tamaño de 6000w, donde "w" representa el ancho en píxeles (en este caso, 6000 píxeles).* -->
-    <img src="/html/assets/image/No Image Available.jpg" alt="Imagen que muestra el texto de que no hay imagenes disponibles" height=""> <!-- *Imagen de respaldo en caso de que las de <source> fallen* -->
-</picture> 
+    <source srcset="/html/assets/image/Rengoku-Happy.png 6000w" type="image/png"> <!-- *Se especifica un recurso de imagen en formato PNG, que el navegador utilizará si es el formato más adecuado para él, Asimismo, se le indica un tamaño de 6000w, donde "w" representa el ancho en píxeles (en este caso, 6000 píxeles). Ademas se especifica al navegador el tipo de archivo y formato del mismo para facilitar su carga.* -->
+    <source srcset="/html/assets/image/Rengoku-Happy.bmp 6000w" type="image/x-bmp"> <!-- *Se especifica un recurso de imagen en formato BMP, que el navegador utilizará si es el formato más adecuado para él, Asimismo, se le indica un tamaño de 6000w, donde "w" representa el ancho en píxeles (en este caso, 6000 píxeles). Ademas se especifica al navegador el tipo de archivo y formato del mismo para facilitar su carga.* -->
+    <img src="/html/assets/image/No Image Available.jpg" alt="Imagen que muestra el texto de que no hay imagenes disponibles"> <!-- *Imagen de respaldo en caso de que las de <source> fallen* -->
+</picture> <!-- *Cierre de la etiqueta de pictures.* -->
 <hr>
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -240,12 +242,14 @@
 <!-- Todo - Atributo de insercion de recursos (src): Define la ubicación de un archivo o recurso que se cargará en la página (como imágenes, videos o scripts). Puede apuntar a recursos internos del proyecto o externos mediante una URL. --><br>
 <img src="https://store-images.s-microsoft.com/image/apps.21855.69479559702140610.dad571dd-6b2c-42a6-be9e-fd11d891d66c.e16a97f5-c50d-4fe7-91fd-1ed4a19aaca7?q=90&w=480&h=270">
 
-<!-- Todo - Navegación entre carpetas internas (/): Se utiliza "/" para definir rutas relativas a archivos o recursos dentro del proyecto, permitiendo acceder a carpetas internas desde la ubicación actual. -->
-<img src="/html/assets/image/artorias.jpg">
+<!-- Todo - Navegación entre carpetas internas (escribir el nombre de la carpeta donde se está trabajando, CTRL+Space): Se utiliza para definir rutas relativas a archivos o recursos dentro del proyecto, permitiendo acceder a carpetas internas desde la ubicación actual desde donde se está llamando al elemento. -->
+<img src="assets/image/Dark Souls-Flame.jpg">
+
+<!-- Todo - Navegación desde la carpeta raíz (/): Se utiliza "/" para definir rutas absolutas a archivos o recursos dentro del proyecto, permitiendo acceder a carpetas desde la ubicación raíz del proyecto. -->
+<img src="/html/assets/image/Dark Souls-Artorias.jpg">
 
 <!-- Todo - Navegación entre carpetas externas (../): Se utiliza "../" para definir rutas relativas a archivos o recursos dentro del proyecto, permitiendo acceder a carpetas externas desde la ubicación actual. -->
-<img src="../resources/assets/img/oscar.jpg">
-
+<img src="../resources/assets/image/Dark Souls-Oscar.jpg">
 </html>
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
